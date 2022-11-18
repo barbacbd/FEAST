@@ -2,6 +2,7 @@ from setuptools import setup, dist
 from setuptools.command.install import install
 from os.path import dirname, abspath, join, exists
 from os import system
+import sys
 import platform
 
 
@@ -40,6 +41,7 @@ def run_setup():
 
     setup (
         name='fstoolbox',
+        packages=['fstoolbox'],
         version='2.1.0',
         author='Adam Pocock',
         author_email='adam@adampocock.com',
